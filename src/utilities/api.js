@@ -7,7 +7,6 @@ export const fetchCharacters = async (query) => {
         const response = await axios.get(`${BASE_URL}/character`, {
             params: { name: query },
         });
-        console.log(response.data);
         
         return response.data.results || [];
     } catch (error) {
