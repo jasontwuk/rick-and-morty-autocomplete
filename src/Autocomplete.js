@@ -88,7 +88,7 @@ const Autocomplete = ({ onSelect }) => {
     scrollToTopOfList();
   }
 
-  const handleKeydown = (event, item) => {
+  const handleKeydown = (event) => {
     if (suggestions.length === 0) return;
     // console.log(event.key);
     
